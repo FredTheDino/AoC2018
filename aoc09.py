@@ -1,13 +1,14 @@
-players = 10
-max_marble = 1618
-
-players = 30
-max_marble = 5807
+# players = 10
+# max_marble = 1618
+# 
+# players = 30
+# max_marble = 5807
+# 
+# players = 9
+# max_marble = 25
 
 players = 459
 max_marble = 72103 * 100
-#players = 9
-#max_marble = 25
 
 class Node:
     def __init__(self, v, p, n):

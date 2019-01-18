@@ -4,8 +4,6 @@ data = []
 i = 0
 with open("input8") as f:
     data = [int(x) for x in f.readlines()[0].split()]
-    
-    
 
 def read_node():
     global data, i

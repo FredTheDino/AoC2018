@@ -1,3 +1,14 @@
+/*
+ * The solution to day 9 in C,
+ * I managed to get it to execute
+ * at less then one tenth of a second
+ * on my PC, which is rougly equivelent
+ * to the startup time of Python.
+ *
+ * Turns out, computers are fast.
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -14,7 +25,7 @@ struct node {
 int main(int argc, char **argv)
 {
 	// NOTE: Unlimited stack size needed.
-	// GOTTA GO FAST
+	// GOTTA GO FAST, SO FAST!
 	struct node __mem[(MARBLE_CNT + 1000) * sizeof(struct node)];
 	struct node *mem = (struct node *) __mem;
 	struct node *current = mem++;

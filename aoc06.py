@@ -28,6 +28,7 @@ with open("input6") as f:
         for b in a:
             summer += b
     print(summer)
+
 #    dim = max_pos
 #
 #    print(dim)

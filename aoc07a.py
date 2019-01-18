@@ -32,13 +32,12 @@ with open("input7") as f:
 
         for i, t in enumerate(tasks):
             if (depend[t] - done) or num_elfs == 0: continue
-            print(t, time)
+            print("started:", t, time)
             num_elfs -= 1
             doing.append((t, time_of_task(t)))
             del tasks[i]
         for i, task in enumerate(doing):
             if task[1] == 1:
-                print(task[0], time)
                 num_elfs += 1
                 done.add(task[0])
                 del doing[i]
@@ -46,7 +45,7 @@ with open("input7") as f:
                 doing[i] = (task[0], task[1] - 1)
         for i, t in enumerate(tasks):
             if (depend[t] - done) or num_elfs == 0: continue
-            print(t, time)
+            print("finished:", t, time)
             num_elfs -= 1
             doing.append((t, time_of_task(t)))
             del tasks[i]

@@ -1,5 +1,4 @@
-
-
+# Yay... fun... 
 def print_cave(cave, units):
     for y, r in enumerate(cave):
         for x, c in enumerate(r):
